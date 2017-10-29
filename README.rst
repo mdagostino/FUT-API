@@ -35,6 +35,42 @@ Optional parameters:
 
     require 'Core.php'
     $fut = new Core('email', 'password', 'secret answer', 'platform', 'backup_code')
+    
+Search
+------
+
+Optional parameters:
+
+- min_price: [int] Minimal price.
+- max_price: [int] Maximum price.
+- min_buy: [int] Minimal buy now price.
+- max_buy: [int] Maximum buy now price.
+- level: ['bronze'/'silver'/gold'] Card level.
+- start: [int] Start page number.
+- category: ['fitness'/'?'] Card category.
+- assetId: [int] assetId.
+- defId: [int] defId.
+- league: [int] League id.
+- club: [int] Club id.
+- position: [int?/str?] Position.
+- zone: ['attacker'/'?'] zone.
+- nationality: [int] Nation id.
+- rare: [boolean] True for searching special cards.
+- playStyle: [str?] playStyle.
+- page_size: [int] Amount of cards on single page (changing this might be risky).
+
+.. code-block:: php
+
+    $items = $fut->searchAuctions('player')
+    
+Logout
+------
+
+Replicates clicking the Logout button.
+
+.. code-block:: php
+
+    $fut->logout()
 
 
 License
