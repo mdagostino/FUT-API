@@ -33,8 +33,8 @@ Optional parameters:
 
 .. code-block:: php
 
-    require 'Core.php'
-    $fut = new Core('email', 'password', 'secret answer', 'platform', 'backup_code')
+    require 'Core.php';
+    $fut = new Core('email', 'password', 'secret answer', 'platform', 'backup_code');
     
 Search
 ------
@@ -61,7 +61,7 @@ Optional parameters:
 
 .. code-block:: php
 
-    $items = $fut->searchAuctions('player')
+    $items = $fut->searchAuctions('player');
     
 Logout
 ------
@@ -70,7 +70,7 @@ Replicates clicking the Logout button.
 
 .. code-block:: php
 
-    $fut->logout()
+    $fut->logout();
 
 
 License
