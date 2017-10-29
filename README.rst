@@ -1,3 +1,9 @@
+<!--
+  Title: FIFA 18 WebApp API
+  Description: A simply way to manage your FIFA 18 Ultimate Team with a PHP framework..
+  Author: Curtis Crewe
+  -->
+
 FIFA 18 WebApp API
 =============
 
