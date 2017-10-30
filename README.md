@@ -37,8 +37,10 @@ Optional parameters:
 - emualte: [and/ios] currently DISABLED.
 - cookies: [filename] path to cookies file, if not provided it'll be created in a 'cookies' directory.
 
-    require 'Core.php';
-    $fut = new Core('email', 'password', 'secret answer', 'platform', 'backup_code');
+```php
+require 'Core.php';
+$fut = new Core('email', 'password', 'secret answer', 'platform', 'backup_code');
+```
     
 Search
 ------
@@ -63,7 +65,9 @@ Optional parameters:
 - playStyle: [str?] playStyle.
 - page_size: [int] Amount of cards on single page (changing this might be risky).
 
-    $items = $fut->searchAuctions('player');
+```php
+$items = $fut->searchAuctions('player');
+```
     
 Logout
 ------
